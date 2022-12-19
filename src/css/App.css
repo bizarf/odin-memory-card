@@ -1,0 +1,5 @@
+@import url(./modern-normalize.css);
+
+div {
+    border: 1px solid;
+}

@@ -1,0 +1,16 @@
+@import url(./modern-normalize.css);
+
+.cardGrid {
+    display: flex;
+    justify-content: center;
+}
+
+.cardImage {
+    padding: 10px;
+    width: 250px;
+}
+
+.cardName {
+    text-align: center;
+    margin: 0;
+}
