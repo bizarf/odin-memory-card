@@ -8,9 +8,13 @@
 .cardImage {
     padding: 10px;
     width: 250px;
+    /* pointer-events: none; */
+    cursor: pointer;
 }
 
 .cardName {
     text-align: center;
     margin: 0;
+    /* pointer-events: none; */
+    cursor: pointer;
 }

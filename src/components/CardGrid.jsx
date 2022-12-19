@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/CardGrid.css";
 // Gen 0
 import tokinoSora from "../assets/card-images/Gen-0/tokino_sora_icon.png";
@@ -13,7 +13,7 @@ import natsuiroMatsuri from "../assets/card-images/Gen-1/natsuiro_matsuri_icon.p
 import akaiHaato from "../assets/card-images/Gen-1/Akai_Haato_icon.png";
 import akiRosenthal from "../assets/card-images/Gen-1/Aki_Rosenthal_icon.png";
 
-export default function CardGrid() {
+export default function CardGrid(props) {
     // i will need to use an array to hold the cards.
     // cards in the array will be objects containing the image name from the import, and a text name
     // create function to randomize the array
@@ -76,13 +76,20 @@ export default function CardGrid() {
         <div className="cardGrid">
             {arraySlice(arrayShuffle(cards)).map((card, index) => {
                 return (
-                    <div key={index}>
+                    <div
+                        key={index}
+                        data-name={card.name}
+                        onClick={props.handleClick}
+                    >
                         <img
                             src={card.image}
                             alt={card.name}
                             className="cardImage"
+                            data-name={card.name}
                         />
-                        <p className="cardName">{card.name}</p>
+                        <p className="cardName" data-name={card.name}>
+                            {card.name}
+                        </p>
                     </div>
                 );
             })}
