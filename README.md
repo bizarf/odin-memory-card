@@ -4,6 +4,12 @@ The goal of this project is to make a memory card game using React. I will be ma
 
 This project was created using Vite instead of CRA. I just wanted to test out Vite.
 
+To run this project on your local server, type:
+
+```
+npm run dev
+```
+
 ###### Credits:
 
 -   Hololive Logo: https://commons.wikimedia.org/wiki/File:Hololive_Production_logo.svg
