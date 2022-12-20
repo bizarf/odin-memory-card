@@ -14,11 +14,7 @@ import akaiHaato from "../assets/card-images/Gen-1/Akai_Haato_icon.png";
 import akiRosenthal from "../assets/card-images/Gen-1/Aki_Rosenthal_icon.png";
 
 export default function CardGrid(props) {
-    // i will need to use an array to hold the cards.
-    // cards in the array will be objects containing the image name from the import, and a text name
-    // create function to randomize the array
-    // select 8 or 4 random cards using the slice function to make a new array
-    // use a map to output divs with the array
+    // array of cards containing name, and a link to the image
     const cards = [
         {
             name: "Tokino Sora",
@@ -80,6 +76,7 @@ export default function CardGrid(props) {
                         key={index}
                         data-name={card.name}
                         onClick={props.handleClick}
+                        className="card"
                     >
                         <img
                             src={card.image}

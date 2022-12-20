@@ -6,15 +6,30 @@
 }
 
 .cardImage {
-    padding: 10px;
     width: 250px;
-    /* pointer-events: none; */
     cursor: pointer;
+}
+
+.card {
+    border: 2px solid;
+    border-radius: 7%;
+    margin: 10px;
+    background-color: white;
 }
 
 .cardName {
     text-align: center;
     margin: 0;
-    /* pointer-events: none; */
     cursor: pointer;
+    /* color: #38bdf8; */
+}
+
+@media screen and (max-width: 480px) {
+    .cardImage {
+        width: 160px;
+    }
+
+    .cardGrid {
+        flex-wrap: wrap;
+    }
 }
