@@ -51,6 +51,9 @@ export default function App() {
                         setBestScore={setBestScore}
                     />
                 </header>
+                <span className="instructions">
+                    Get the highest score by clicking each image once!
+                </span>
                 <CardGrid handleClick={handleClick} />
             </div>
             <footer>
