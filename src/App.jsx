@@ -50,7 +50,12 @@ export default function App() {
                 />
             </div>
             <footer>
-                <span>Page created by Bizarf</span>
+                <span>
+                    Page created by{" "}
+                    <a href="https://github.com/bizarf/odin-memory-card">
+                        Bizarf
+                    </a>
+                </span>
                 <span>© 2016 COVER Corp.</span>
             </footer>
         </div>
