@@ -4,6 +4,8 @@ The goal of this project is to make a memory card game using React. I will be ma
 
 This project was created using Vite instead of CRA. I just wanted to test out Vite.
 
+[View the live app here](https://bizarf.github.io/odin-memory-card/)
+
 To run this project on your local server, type:
 
 ```

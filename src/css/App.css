@@ -15,7 +15,7 @@
 }
 
 footer {
-    font-size: 12px;
+    font-size: 0.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,22 +36,22 @@ img {
     -webkit-user-drag: none;
 }
 
-.headerBanner {
+.header__banner {
     color: #38bdf8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 1%;
 }
 
-.title {
-    font-size: 30px;
+.header__banner--title {
+    font-size: 2.1em;
     transform: scaleY(1.5);
 }
 
-.hololiveLogo {
-    width: 300px;
-    margin-bottom: 10px;
+.header__banner--logo {
+    width: 32ch;
+    margin-bottom: 1%;
 }
 
 .scoreBoard {
@@ -65,27 +65,28 @@ img {
 .instructions {
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
 @media screen and (max-width: 480px) {
-    .headerBanner {
+    .header__banner {
         align-items: flex-start;
     }
 
-    .hololiveLogo {
-        width: 200px;
+    .header__banner--logo {
+        width: 19ch;
     }
 
-    .title {
-        font-size: 20px;
+    .header__banner--title {
+        font-size: 1.3em;
     }
 
     .scoreBoard {
-        font-size: 12px;
+        font-size: 0.7em;
     }
 
     .instructions {
-        font-size: 12px;
+        font-size: 0.7em;
+        padding-top: 1%;
     }
 }

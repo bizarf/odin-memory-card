@@ -5,31 +5,38 @@
     justify-content: center;
 }
 
-.cardImage {
-    width: 250px;
+.cardGrid__image {
+    width: 25ch;
     cursor: pointer;
 }
 
-.card {
+.cardGrid__card {
     border: 2px solid;
     border-radius: 7%;
-    margin: 10px;
+    margin: 0.8em;
     background-color: white;
 }
 
-.cardName {
+.cardGrid__name {
     text-align: center;
     margin: 0;
     cursor: pointer;
-    /* color: #38bdf8; */
 }
 
 @media screen and (max-width: 480px) {
-    .cardImage {
-        width: 160px;
+    .cardGrid__image {
+        width: 16ch;
+    }
+
+    .cardGrid__card {
+        margin: 0.3em;
     }
 
     .cardGrid {
         flex-wrap: wrap;
+    }
+
+    .cardGrid__name {
+        font-size: 0.8em;
     }
 }

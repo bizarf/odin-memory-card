@@ -20,29 +20,19 @@ export default function App() {
         setScore(score + 1);
     };
 
-    const [cardClicked, setCardClicked] = useState([]);
-    // user click card, if the card clicked's name is already in the array then reset the score board, otherwise add the card to cardClicked array and increase the score
-    const handleClick = (e) => {
-        const name = e.target.dataset.name;
-        if (cardClicked.find((names) => names === name)) {
-            setCardClicked([]);
-            return resetScore();
-        }
-        setCardClicked([...cardClicked, name]);
-        increaseScore();
-    };
-
     return (
         <div className="app">
             <div className="content">
-                <header>
-                    <div className="headerBanner">
+                <header className="header">
+                    <div className="header__banner">
                         <img
                             src={hololiveLogo}
                             alt="Hololive company logo"
-                            className="hololiveLogo"
+                            className="header__banner--logo"
                         />
-                        <span className="title">Memory Game</span>
+                        <span className="header__banner--title">
+                            Memory Game
+                        </span>
                     </div>
                     <Score
                         setScore={setScore}
@@ -54,7 +44,10 @@ export default function App() {
                 <span className="instructions">
                     Get the highest score by clicking each image once!
                 </span>
-                <CardGrid handleClick={handleClick} />
+                <CardGrid
+                    resetScore={resetScore}
+                    increaseScore={increaseScore}
+                />
             </div>
             <footer>
                 <span>Page created by Bizarf</span>
